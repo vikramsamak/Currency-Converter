@@ -1,4 +1,4 @@
-from pprint import pp
+
 from tkinter import*
 from tkinter import ttk
 import customtkinter
@@ -6,7 +6,7 @@ import requests
 import json
 
 def convert():
-    #try:
+    try:
         currency1=c1.get()
         currency2=c2.get()
         amount=e1.get()
@@ -26,7 +26,7 @@ def convert():
 
         e2.delete(0,END)
         e2.insert(0,result)
-    #except:
+    except:
         #e2.insert(0,"Please Check Your Internet Connnection !")
 
 
